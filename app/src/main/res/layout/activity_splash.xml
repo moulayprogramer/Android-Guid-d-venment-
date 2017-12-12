@@ -3,19 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/splash"
     tools:context="com.phoenix.moulay.guidevenment.Splash">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="238dp"
-        android:gravity="center"
-        android:text="Splash Screen"
-        android:textColor="#000"
-        android:textSize="40sp"
-        android:textStyle="bold" />
+
 
 </RelativeLayout>

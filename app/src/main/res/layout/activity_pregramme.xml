@@ -37,7 +37,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:background="#1EABF1"
-                android:fontFamily="casual"
                 android:gravity="center"
                 android:text="Dimanche 17 decembre 2017"
                 android:textColor="#fff"

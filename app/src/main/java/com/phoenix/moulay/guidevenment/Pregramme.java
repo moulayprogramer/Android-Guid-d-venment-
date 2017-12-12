@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Pregramme extends AppCompatActivity {
-    TextView tvtitle;
+    TextView tvtitle,tvj1,tvj2;
     WebView webView,wbs1,wbs2,wbs3,wbs4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +22,13 @@ public class Pregramme extends AppCompatActivity {
         wbs3 = findViewById(R.id.wbs3);
         wbs4 = findViewById(R.id.wbs4);
         tvtitle = findViewById(R.id.tvtitle);
+        tvj1 = findViewById(R.id.tvj1);
+        tvj2 = findViewById(R.id.tvj2);
 
 
         tvtitle.setTypeface(Typeface.createFromAsset(getAssets(), "odessa.ttf"));
+        tvj1.setTypeface(Typeface.createFromAsset(getAssets(),"font-01.ttf"));
+        tvj2.setTypeface(Typeface.createFromAsset(getAssets(),"font-01.ttf"));
 
         webView.loadData("<html><head></head><body><table><tr><td width=60px valign=top ><font color=#1EABF1  >14h00 :</font></td><td> <font color=black><b>Accueil des participants </b>- Cocktail de beinvenue.</font> " +
                 "</td></tr></table><table><tr><td width=60px valign=top><font color=#1EABF1 >14h30 :</font></td><td> <font color=black><b>Inaugurationofficielle :</b> Séance d'ouverture et allocutions.</font> </td></tr></table><table><tr><td width=60px valign=top >" +
