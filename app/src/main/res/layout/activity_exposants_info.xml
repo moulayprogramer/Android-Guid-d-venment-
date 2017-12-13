@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="3dp"
+    android:background="#ffffff"
+    tools:context="com.phoenix.moulay.guidevenment.ExposantsInfo">
+
+    <TextView
+        android:id="@+id/tvnom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:textColor="#1EABF1"/>
+    <TextView
+        android:id="@+id/tnom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/tvpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Le poste actuel"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#1EABF1"/>
+    <TextView
+        android:id="@+id/tpost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/tvpresent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Presentation"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#1EABF1"/>
+    <TextView
+        android:id="@+id/tpresente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000" />
+
+</LinearLayout>

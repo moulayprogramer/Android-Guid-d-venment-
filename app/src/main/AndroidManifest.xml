@@ -3,6 +3,7 @@
     package="com.phoenix.moulay.guidevenment">
 
     <application
+        android:name=".ShareData"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,13 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-        android:name=".Splash"
-        android:screenOrientation="portrait">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
@@ -27,7 +28,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Map"
+        <activity
+            android:name=".Map"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.phoenix.moulay.guidevenment.Map" />
@@ -35,7 +37,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Conferencier"
+        <activity
+            android:name=".Conferencier"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.phoenix.moulay.guidevenment.Conferencier" />
@@ -43,7 +46,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Conferences"
+        <activity
+            android:name=".Conferences"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.phoenix.moulay.guidevenment.Conferences" />
@@ -51,15 +55,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Places"
-            android:screenOrientation="portrait" >
+        <activity
+            android:name=".Places"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.phoenix.moulay.guidevenment.Places" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Info"
+        <activity
+            android:name=".Info"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.phoenix.moulay.guidevenment.Info" />
@@ -67,8 +73,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Pregramme"
+        <activity
+            android:name=".Pregramme"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.phoenix.moulay.guidevenment.Pregramme" />
@@ -76,7 +82,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".ExposantsInfo"
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="com.phoenix.moulay.guidevenment.ExposantsInfo" />
 
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>
