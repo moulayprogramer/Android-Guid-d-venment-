@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.phoenix.moulay.guidevenment.Conferences">
+    tools:context="com.phoenix.moulay.guidevenment.Exposant">
 
     <TextView
         android:id="@+id/tvtitle"
@@ -14,8 +14,8 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="Conferences"
-        android:textColor="#000"
+        android:text="Exposants"
+        android:textColor="#1EABF1"
         android:textSize="40sp" />
     <com.phoenix.moulay.guidevenment.widget.IndexableListView
         android:id="@+id/listExposant"

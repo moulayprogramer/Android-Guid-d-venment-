@@ -38,10 +38,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Conferencier"
+            android:name=".Exposant"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="com.phoenix.moulay.guidevenment.Conferencier" />
+                <action android:name="com.phoenix.moulay.guidevenment.Exposant" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -82,13 +82,22 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ExposantsInfo"
+        <activity
+            android:name=".ExposantsInfo"
             android:screenOrientation="portrait">
-        <intent-filter>
-            <action android:name="com.phoenix.moulay.guidevenment.ExposantsInfo" />
+            <intent-filter>
+                <action android:name="com.phoenix.moulay.guidevenment.ExposantsInfo" />
 
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ConferenceInfo"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.phoenix.moulay.guidevenment.ConferenceInfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

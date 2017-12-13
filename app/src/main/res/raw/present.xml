@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<present>
+	<conference>
+		<N>1</N>
+		<Nom>Inauguration officielle : Seance d'ouverture et allocutions</Nom>
+		<Date>Dimanche 17 Decembre 2017 </Date>
+		<Temps>14h30</Temps>
+		<Lieu>Auditorium Mohammed SOUFI(UATL)</Lieu>
+		<Present>Pr.AOUFFEN Nabil
+			Pr.ZID EL KHIR Mabrouk
+			Pr.BENBERTAL Djamel
+			M.MEGUELLATI Ahmed
+			Pr.SEDDIKI M'Hamed Mohamed Salah Eddine
+			Pr.AOUFFEN Nabil
+		</Present>
+	</conference>
+
+	<conference>
+		<N>2</N>
+		<Nom>Ethique et Recherche : le scientifique moderne entre Dogmatisme et Scepticisme</Nom>
+		<Date>Dimanche 17 Decembre 2017 </Date>
+		<Temps>15h00</Temps>
+		<Lieu>Auditorium Mohammed SOUFI(UATL)</Lieu>
+		<Present>Pr.M.ZITOUNI</Present>
+	</conference>
+
+	<conference>
+		<N>3</N>
+		<Nom>Message adresse de M.Mohamed BEDJAOUI Bioethique et sante</Nom>
+		<Date>Dimanche 17 Decembre 2017 </Date>
+		<Temps>15h20</Temps>
+		<Lieu>Auditorium Mohammed SOUFI(UATL)</Lieu>
+		<Present>M.Yahia FEHIM</Present>
+	</conference>
+
+	<conference>
+		<N>4</N>
+		<Nom>Bioethique,principes et regles</Nom>
+		<Date>Lundi 18 Decembre 2017 </Date>
+		<Temps>08h30</Temps>
+		<Lieu>Salle de conference CRSIC</Lieu>
+		<Present>Pr.M.KHIATI</Present>
+	</conference>
+
+	<conference>
+		<N>5</N>
+		<Nom>Place de l'ethique dans le droit musulman</Nom>
+		<Date>Lundi 18 Decembre 2017 </Date>
+		<Temps>08h50</Temps>
+		<Lieu>Salle de conference CRSIC</Lieu>
+		<Present>Pr.M.BAJOU</Present>
+	</conference>
+
+	<conference>
+		<N>6</N>
+		<Nom>Ethique medicale,principes generaux </Nom>
+		<Date>Lundi 18 Decembre 2017 </Date>
+		<Temps>14h00</Temps>
+		<Lieu>Salle de conference CRSIC</Lieu>
+		<Present>Pr.A.ABOUBEKER</Present>
+	</conference>
+
+	<conference>
+		<N>7</N>
+		<Nom>La promotion de l'ethique dans les etablissements de recherche</Nom>
+		<Date>Lundi 18 Decembre 2017 </Date>
+		<Temps>14h20</Temps>
+		<Lieu>Salle de conference CRSIC</Lieu>
+		<Present>Pr.H.BENBOUZA</Present>
+	</conference>
+
+	<conference>
+
+		<N>8</N>
+		<Nom>1er ATRLIER :CHARTE ETHIQUE DE L'ATRSS</Nom>
+		<Date>Lundi 18 Decembre 2017 </Date>
+		<Temps>16h30</Temps>
+		<Lieu>Auditorium Mohammed SOUFI(UATL)</Lieu>
+	</conference>
+
+	<conference>
+		<N>9</N>
+		<Nom>2eme ATRLIER :CONSENTEMENT ECLAIRE</Nom>
+		<Date>Lundi 18 Decembre 2017 </Date>
+		<Temps>16h30</Temps>
+		<Lieu>Auditorium Mohammed SOUFI(UATL)</Lieu>
+	</conference>
+
+	<conference>
+		<N>10</N>
+		<Nom>3eme ATELIER :INSTITUTIONNALISATION DE L'ETHIQUE</Nom>
+		<Date>Lundi 18 Decembre 2017 </Date>
+		<Temps>16h30</Temps>
+		<Lieu>Auditorium Mohammed SOUFI(UATL)</Lieu>
+	</conference>
+</present>

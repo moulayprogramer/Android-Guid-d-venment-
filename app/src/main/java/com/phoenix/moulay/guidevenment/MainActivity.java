@@ -31,10 +31,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.bconfrs:
-                startActivity(new Intent("com.phoenix.moulay.guidevenment.Conferences"));
+                startActivity(new Intent("com.phoenix.moulay.guidevenment.Exposant"));
                 break;
             case R.id.bConfr:
-                startActivity(new Intent("com.phoenix.moulay.guidevenment.Conferencier"));
+                startActivity(new Intent("com.phoenix.moulay.guidevenment.Conferences"));
                 break;
             case R.id.bplac:
                 startActivity(new Intent("com.phoenix.moulay.guidevenment.Places"));

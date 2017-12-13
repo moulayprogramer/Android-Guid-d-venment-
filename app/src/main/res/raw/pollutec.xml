@@ -2,8 +2,88 @@
 <Pollutec>
 	<Exposant>
 		<N>1</N>
-		<Nom>elkaim moulay abdellah</Nom>
-		<experience> developer android and web </experience>
-		<presente> application Giud event </presente>
+		<Nom> Aouffen Nabil</Nom>
+		<experience>DG de l'ATRSS. </experience>
+		<presente> Cocktail de bienvenue. </presente>
+	</Exposant>
+	<Exposant>
+		<N>2</N>
+		<Nom>Zid El Khir Mabrouk</Nom>
+		<experience>Directeur d CRSIC de Laghouat. </experience>
+		<presente> Cocktail de bienvenue.</presente>
+	</Exposant>
+
+	<Exposant>
+		<N>3</N>
+		<Nom>Seddiki M'Hamed Mohamed Salah Eddine</Nom>
+		<experience>Secrétaire Général du MESRS M.MEGUELLI Ahmed : wali de wilaya de Laghout.</experience>
+		<presente>Cocktail de bienvenue.</presente>
+	</Exposant>
+	<Exposant>
+		<N>4</N>
+		<Nom>Zitouni Mohamed</Nom>
+		<experience>Coordinateur du Plan National Gancer,Alger.</experience>
+		<presente>Cocktail de bienvenue.</presente>
+	</Exposant>
+	<Exposant>
+		<N>5</N>
+		<Nom>BedjMohamed</Nom>
+		<experience>ANCIEN Ministre d'Etat,Ministre des affaires Etrangéres.</experience>
+		<presente>Cocktail de bienvenue.</presente>
+	</Exposant>
+	<Exposant>
+		<N>6</N>
+		<Nom>Meguele Ahmed</Nom>
+		<experience>wali de wilaya de Laghout.</experience>
+		<presente>Cocktail de bienvenue.</presente>
+	</Exposant>
+	<Exposant>
+		<N>7</N>
+		<Nom>Zitouni Mohammed</Nom>
+		<experience>Coordinateur du Plan National Gancer,Alger.</experience>
+		<presente>le scientifique moderne entre DogmastismeL  et Scepticime.</presente>
+	</Exposant>
+	<Exposant>
+		<N>8</N>
+		<Nom>Bedjaoui Mohamed</Nom>
+		<experience> ANCIEN Ministre d'Etat,Ministre des affaires Etrangéres.</experience>
+		<presente>message adressé Bioéthique et santé.</presente>
+	</Exposant>
+	<Exposant>
+		<N>9</N>
+		<Nom>khiati mohamed</Nom>
+		<experience>Président du Conseil National d'Evaluation de la Recherch et du Développement Technologique,Alger.</experience>
+		<presente>Bioéthque,principes et régles.</presente>
+	</Exposant>
+	<Exposant>
+		<N>10</N>
+		<Nom>Bajou mohamed</Nom>
+		<experience>Membre Du Haut Conseil Islamique.Ghardia.</experience>
+		<presente>Place de l'éthique dans le droit musulman.</presente>
+	</Exposant>
+	<Exposant>
+		<N>10</N>
+		<Nom>Lakhdari.L</Nom>
+		<experience>Faculté de science Humaines et des science Islamique, Université Ahmed Ben Bella d'Oran 1.</experience>
+		<presente>Equation entre les faits scientifique et leurs fins légitimes ,approche théologique. </presente>
+	</Exposant>
+
+	<Exposant>
+		<N>12</N>
+		<Nom>Oussoukine.A</Nom>
+		<experience>Faculté de Doit et des Sciences politique ,Université Mohamed Ben Ahmed d'Oran 2.</experience>
+		<presente>Bioéthique,quels enjeux?</presente>
+	</Exposant>
+	<Exposant>
+		<N>13</N>
+		<Nom>Aboubeker.A</Nom>
+		<experience>Faculté de Médecine,Université Ahmed Ben Bella d'Oran 1.</experience>
+		<presente>Ethique médicale,principes généraux.</presente>
+	</Exposant>
+	<Exposant>
+		<N>14</N>
+		<Nom>Benbouza.H</Nom>
+		<experience>Président de la Commission Intersectorielle en Santé et Science du Vivant-Batna.</experience>
+		<presente>La promotion de l'éthique dans les établissements de recherch.</presente>
 	</Exposant>
 </Pollutec>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="3dp"
+    android:background="#ffffff"
+    tools:context="com.phoenix.moulay.guidevenment.ConferenceInfo">
+
+    <TextView
+        android:id="@+id/tvnom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:textColor="#1EABF1"/>
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#1EABF1"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/tvtemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temps"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#1EABF1"/>
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/tvlieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lieu"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#1EABF1"/>
+    <TextView
+        android:id="@+id/lieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/tvpresente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Presente Par"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#1EABF1"/>
+    <TextView
+        android:id="@+id/presente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000" />
+
+</LinearLayout>
