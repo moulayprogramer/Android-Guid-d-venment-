@@ -57,7 +57,7 @@ public class Location implements LocationListener {
     @Override
     public void onLocationChanged(android.location.Location location) {
         try {
-            Toast.makeText(c,""+location.getLatitude(),Toast.LENGTH_SHORT).show();
+            //Toast.makeText(c,""+location.getLatitude(),Toast.LENGTH_SHORT).show();
             ((ShareData)app).mLastLocation = location;
             ((ShareData)app).MyLocation(location.getLatitude(),location.getLongitude());
         } catch (Exception e) {
