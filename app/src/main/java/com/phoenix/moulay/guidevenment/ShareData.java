@@ -1,8 +1,18 @@
 package com.phoenix.moulay.guidevenment;
 
+import android.app.AlertDialog;
 import android.app.Application;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.phoenix.moulay.guidevenment.Modeles.Conference;
 import com.phoenix.moulay.guidevenment.Modeles.Exposant;
 
@@ -23,6 +33,9 @@ public class ShareData extends Application {
     public Conference selectedConference;
     public XmlPullParser myParser;
     public InputStream input;
+    private  Marker mCurrLocationMarker;
+    public GoogleMap mGoogleMap;
+    public android.location.Location mLastLocation;
 
     public void getExposant(){
         exposants = new ArrayList<>();
@@ -136,6 +149,50 @@ public class ShareData extends Application {
         }catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void turnGPSOn(Context c) {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(c);
+        alertDialogBuilder.setMessage("Aimeriez-vous pour permettre GPS ?")
+                .setCancelable(false)
+                .setPositiveButton("permettre GPS",
+                        new DialogInterface.OnClickListener(){
+                            public void onClick(DialogInterface dialog, int id){
+                                Intent callGPSSettingIntent = new Intent(
+                                        android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                                callGPSSettingIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(callGPSSettingIntent);
+                            }
+                        });
+        alertDialogBuilder.setNegativeButton("Cancel",
+                new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dialog, int id){
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = alertDialogBuilder.create();
+        alert.show();
+    }
+
+    public void MyLocation(double ltt,double lgt){
+
+        if (mCurrLocationMarker != null) {
+            mCurrLocationMarker.remove();
+        }
+
+
+        //Place current location marker
+        LatLng latLng = new LatLng(ltt,lgt);
+        MarkerOptions markerOptions = new MarkerOptions()
+                .position(latLng)
+                .title("Position courante")
+                .snippet("Je Suis La !")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+        mCurrLocationMarker = mGoogleMap.addMarker(markerOptions);
+        mCurrLocationMarker.showInfoWindow();
+        //move map camera
+        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+        mGoogleMap.animateCamera(CameraUpdateFactory.zoomTo(17));
     }
 
 }
