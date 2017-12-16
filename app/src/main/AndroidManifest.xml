@@ -68,7 +68,7 @@
             android:name=".Places"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="com.phoenix.moulay.guidevenment.Places" />
+                <action android:name="com.phoenix.moulay.guidevenment.Planuniv" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -131,7 +131,22 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-    </application>
+        <activity android:name=".Choi_de_plan"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.phoenix.moulay.guidevenment.Places" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".placesmarkaz"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.phoenix.moulay.guidevenment.Planmarkaz" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>

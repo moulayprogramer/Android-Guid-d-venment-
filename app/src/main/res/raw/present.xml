@@ -50,9 +50,24 @@
 		<Lieu>Salle de conference CRSIC</Lieu>
 		<Present>Pr.M.BAJOU</Present>
 	</conference>
-
 	<conference>
 		<N>6</N>
+		<Nom>Equation entre les faits scientifiques et leurs fins légmitimes,approche théologique</Nom>
+		<Date>Lundi 18 Decembre 2017</Date>
+		<Temps>10h30</Temps>
+		<Lieu>Salle de conference CRSIC</Lieu>
+		<Present>PR.L.LAKHDARI</Present>
+	</conference>
+	<conference>
+		<N>7</N>
+		<Nom>Bioéthique,quels enjeux</Nom>
+		<Date>Lundi 18 Decembre 2017 </Date>
+		<Temps>10h50</Temps>
+		<Lieu>Salle de conference CRSIC</Lieu>
+		<Present>Pr.A.OUSSOKINE</Present>
+	</conference>
+	<conference>
+		<N>8</N>
 		<Nom>Ethique medicale,principes generaux </Nom>
 		<Date>Lundi 18 Decembre 2017 </Date>
 		<Temps>14h00</Temps>
@@ -61,7 +76,7 @@
 	</conference>
 
 	<conference>
-		<N>7</N>
+		<N>9</N>
 		<Nom>La promotion de l'ethique dans les etablissements de recherche</Nom>
 		<Date>Lundi 18 Decembre 2017 </Date>
 		<Temps>14h20</Temps>
@@ -71,7 +86,7 @@
 
 	<conference>
 
-		<N>8</N>
+		<N>10</N>
 		<Nom>1er ATRLIER :CHARTE ETHIQUE DE L'ATRSS</Nom>
 		<Date>Lundi 18 Decembre 2017 </Date>
 		<Temps>16h30</Temps>
@@ -79,7 +94,7 @@
 	</conference>
 
 	<conference>
-		<N>9</N>
+		<N>11</N>
 		<Nom>2eme ATRLIER :CONSENTEMENT ECLAIRE</Nom>
 		<Date>Lundi 18 Decembre 2017 </Date>
 		<Temps>16h30</Temps>
@@ -87,7 +102,7 @@
 	</conference>
 
 	<conference>
-		<N>10</N>
+		<N>12</N>
 		<Nom>3eme ATELIER :INSTITUTIONNALISATION DE L'ETHIQUE</Nom>
 		<Date>Lundi 18 Decembre 2017 </Date>
 		<Temps>16h30</Temps>

@@ -22,23 +22,23 @@
             android:id="@+id/crsic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
             android:layout_weight="1"
             android:background="@drawable/mar"
-            android:onClick="gotoCRSIC"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            />
+            android:onClick="gotoCRSIC" />
 
         <Button
             android:id="@+id/uatl"
-            android:onClick="gotoUATL"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
             android:layout_marginLeft="10dp"
-            android:background ="@drawable/uni"/>
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/uni"
+            android:onClick="gotoUATL" />
 
     </LinearLayout>
 </LinearLayout>

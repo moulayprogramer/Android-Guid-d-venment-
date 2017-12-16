@@ -14,7 +14,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="Conferences"
+        android:text="Conférences"
         android:textColor="#1EABF1"
         android:textSize="40sp" />
     <com.phoenix.moulay.guidevenment.widget.IndexableListView

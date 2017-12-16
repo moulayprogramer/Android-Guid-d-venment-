@@ -213,98 +213,107 @@ public class MapAct extends FragmentActivity implements OnMapReadyCallback {
     }
 
     public void gotoUATL(View view) {
-        LatLng point = new LatLng(33.795964, 2.849461);
-        // Already two locations
-        if (MarkerPoints.size() <=2) {
-            MarkerPoints.clear();
-            mMap.clear();
-        }
-        //Place initial location marker
-        final android.location.Location location1 = ((ShareData)getApplication()).mLastLocation;
-        final LatLng latLng1 = new LatLng(location1.getLatitude(), location1.getLongitude());
-        final MarkerOptions markerOptions1 = new MarkerOptions()
-                .position(latLng1)
-                .title("Position courante")
-                .snippet("Je Suis La !")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+        try {
+            LatLng point = new LatLng(33.795964, 2.849461);
+            // Already two locations
+            if (MarkerPoints.size() <= 2) {
+                MarkerPoints.clear();
+                mMap.clear();
+            }
+            //Place initial location marker
+            final android.location.Location location1 = ((ShareData) getApplication()).mLastLocation;
+            final LatLng latLng1 = new LatLng(location1.getLatitude(), location1.getLongitude());
+            final MarkerOptions markerOptions1 = new MarkerOptions()
+                    .position(latLng1)
+                    .title("Position courante")
+                    .snippet("Je Suis La !")
+                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
 
 
-        mCurrLocationMarkerInit = mMap.addMarker(markerOptions1);
-        //20/11/2017
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng1));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(17));
-        // Adding the initial position to the ArrayList
-        MarkerPoints.add(latLng1);
-        // Adding new item to the ArrayList
-        MarkerPoints.add(point);
-        // Creating MarkerOptions
-        MarkerOptions options = new MarkerOptions();
-        // Setting the position of the marker
-        options.position(point)
-                .title("UATL")
-                .snippet("جامعة عمار ثليجي")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));;
-        // Add new marker to the Google Map Android API V2
-        mMap.addMarker(options);
-        // Checks, whether start and end locations are captured
-        if (MarkerPoints.size() > 1) {
-            LatLng origin = MarkerPoints.get(0);
-            LatLng dest = MarkerPoints.get(1);
-            // Getting URL to the Google Directions API
-            String url = getUrl(origin, dest);
-            Log.d("gotoUATL", url.toString());
-            FetchUrl FetchUrl = new FetchUrl();
-            // Start downloading json data from Google Directions API
-            FetchUrl.execute(url);
-            //move map camera
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(dest));
-            mMap.animateCamera(CameraUpdateFactory.zoomTo(13));
+            mCurrLocationMarkerInit = mMap.addMarker(markerOptions1);
+            //20/11/2017
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng1));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(17));
+            // Adding the initial position to the ArrayList
+            MarkerPoints.add(latLng1);
+            // Adding new item to the ArrayList
+            MarkerPoints.add(point);
+            // Creating MarkerOptions
+            MarkerOptions options = new MarkerOptions();
+            // Setting the position of the marker
+            options.position(point)
+                    .title("UATL")
+                    .snippet("جامعة عمار ثليجي")
+                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+            ;
+            // Add new marker to the Google Map Android API V2
+            mMap.addMarker(options);
+            // Checks, whether start and end locations are captured
+            if (MarkerPoints.size() > 1) {
+                LatLng origin = MarkerPoints.get(0);
+                LatLng dest = MarkerPoints.get(1);
+                // Getting URL to the Google Directions API
+                String url = getUrl(origin, dest);
+                Log.d("gotoUATL", url.toString());
+                FetchUrl FetchUrl = new FetchUrl();
+                // Start downloading json data from Google Directions API
+                FetchUrl.execute(url);
+                //move map camera
+                mMap.moveCamera(CameraUpdateFactory.newLatLng(dest));
+                mMap.animateCamera(CameraUpdateFactory.zoomTo(13));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
     public void gotoCRSIC(View view) {
-        LatLng point = new LatLng(33.792207, 2.848128);
-        // Already two locations
-        if (MarkerPoints.size() <= 2) {
-            MarkerPoints.clear();
-            mMap.clear();
-        }
-        //Place initial location marker
-        final android.location.Location location1 = ((ShareData)getApplication()).mLastLocation;
-        final LatLng latLng1 = new LatLng(location1.getLatitude(), location1.getLongitude());
-        final MarkerOptions markerOptions1 = new MarkerOptions()
-                .position(latLng1);
-        mCurrLocationMarkerInit = mMap.addMarker(markerOptions1);
-        //20/11/2017
+        try {
+            LatLng point = new LatLng(33.792207, 2.848128);
+            // Already two locations
+            if (MarkerPoints.size() <= 2) {
+                MarkerPoints.clear();
+                mMap.clear();
+            }
+            //Place initial location marker
+            final android.location.Location location1 = ((ShareData) getApplication()).mLastLocation;
+            final LatLng latLng1 = new LatLng(location1.getLatitude(), location1.getLongitude());
+            final MarkerOptions markerOptions1 = new MarkerOptions()
+                    .position(latLng1);
+            mCurrLocationMarkerInit = mMap.addMarker(markerOptions1);
+            //20/11/2017
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng1));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(17));
-        // Adding the initial position to the ArrayList
-        MarkerPoints.add(latLng1);
-        // Adding new item to the ArrayList
-        MarkerPoints.add(point);
-        // Creating MarkerOptions
-        MarkerOptions options = new MarkerOptions();
-        // Setting the position of the marker
-        options.position(point)
-                .title("CRSIC")
-                .snippet("مركز البحث في العلوم الاسلامية");
-        // Add new marker to the Google Map Android API V2
-        mMap.addMarker(options);
-        // point.showInfoWindow();
-        // Checks, whether start and end locations are captured
-        if (MarkerPoints.size() > 1) {
-            LatLng origin = MarkerPoints.get(0);
-            LatLng dest = MarkerPoints.get(1);
-            // Getting URL to the Google Directions API
-            String url = getUrl(origin, dest);
-            Log.d("gotoCRSIC", url.toString());
-            FetchUrl FetchUrl = new FetchUrl();
-            // Start downloading json data from Google Directions API
-            FetchUrl.execute(url);
-            // move map camera
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(origin));
-            mMap.animateCamera(CameraUpdateFactory.zoomTo(13));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng1));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(17));
+            // Adding the initial position to the ArrayList
+            MarkerPoints.add(latLng1);
+            // Adding new item to the ArrayList
+            MarkerPoints.add(point);
+            // Creating MarkerOptions
+            MarkerOptions options = new MarkerOptions();
+            // Setting the position of the marker
+            options.position(point)
+                    .title("CRSIC")
+                    .snippet("مركز البحث في العلوم الاسلامية");
+            // Add new marker to the Google Map Android API V2
+            mMap.addMarker(options);
+            // point.showInfoWindow();
+            // Checks, whether start and end locations are captured
+            if (MarkerPoints.size() > 1) {
+                LatLng origin = MarkerPoints.get(0);
+                LatLng dest = MarkerPoints.get(1);
+                // Getting URL to the Google Directions API
+                String url = getUrl(origin, dest);
+                Log.d("gotoCRSIC", url.toString());
+                FetchUrl FetchUrl = new FetchUrl();
+                // Start downloading json data from Google Directions API
+                FetchUrl.execute(url);
+                // move map camera
+                mMap.moveCamera(CameraUpdateFactory.newLatLng(origin));
+                mMap.animateCamera(CameraUpdateFactory.zoomTo(13));
 
+            }
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
 
